@@ -1,4 +1,4 @@
-name: Deploy ChunJin website
+name: Deploy CunJin website
 on:
   push:
     branches: [main]
@@ -8,7 +8,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: chunjin-pages
+  group: cunjin-pages
   cancel-in-progress: false
 jobs:
   deploy:
