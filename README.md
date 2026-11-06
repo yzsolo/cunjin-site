@@ -30,11 +30,21 @@ python3 -m http.server 4784 --bind 127.0.0.1
 
 仅发布六个 HTML 页面、CSS 和图片，不发布说明文档或 Git 配置。
 
-取得正式域名并完成 DNS/HTTPS 后，再增加 CNAME 和对应的语言 alternate/canonical。尚未设置未验证的自定义域名。寸金应用目前处于上架准备阶段，购买入口显示“即将登陆 Mac App Store”，取得正式商店链接后再更新。
+独立域名采用 `cunjin.ch416.cn`，与 HiBody 的 `hibody.ch416.cn` 保持同样的组织方式。根目录 CNAME 已配置；GitHub Pages 的 Custom domain 也需要设置为该域名。
+
+阿里云 `ch416.cn` 的 DNS 记录：
+
+| 类型 | 主机记录 | 记录值 |
+| --- | --- | --- |
+| CNAME | `cunjin` | `yzsolo.github.io` |
+
+2026-11-06 已确认工作流部署成功；域名解析和 HTTPS 尚待完成验证。地址可用后，再补充 canonical/alternate 并启用 Enforce HTTPS。
+
+寸金应用目前处于上架准备阶段，购买入口显示“即将登陆 Mac App Store”，取得正式商店链接后再更新。
 
 ## 2026-11-06
 
 - 中英文六页完成，桌面及 390px 窄屏布局检查通过。
 - 页面链接及图片资源检查通过。
 - 独立项目，不依赖 HiBody 的网站目录和部署。
-- 仓库已创建并推送至 `yzsolo/cunjin-site` 的 main 分支；Pages 发布需先在仓库设置中选择 GitHub Actions。
+- 仓库已创建并推送至 `yzsolo/cunjin-site` 的 main 分支；Pages Source 已设为 GitHub Actions，工作流 `42206185883` 部署成功。
