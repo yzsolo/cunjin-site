@@ -2,6 +2,8 @@
 
 项目及 Git 仓库名称：`cunjin-site`。
 
+[GitHub 仓库](https://github.com/yzsolo/cunjin-site)
+
 独立的寸金产品介绍网站。黑金主题、中英文介绍、使用支持和隐私政策，展示应用实际界面的示例价格截图。
 
 ## 本地预览
@@ -35,3 +37,4 @@ python3 -m http.server 4784 --bind 127.0.0.1
 - 中英文六页完成，桌面及 390px 窄屏布局检查通过。
 - 页面链接及图片资源检查通过。
 - 独立项目，不依赖 HiBody 的网站目录和部署。
+- 仓库已创建并推送至 `yzsolo/cunjin-site` 的 main 分支；Pages 发布需先在仓库设置中选择 GitHub Actions。
